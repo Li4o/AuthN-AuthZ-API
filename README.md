@@ -38,7 +38,28 @@ A secure authentication and authorization API built with Python(FastAPI), featur
 ---
 
 ## Directory Structure
-> **Coming Soon** ? The directory structure will be updated soon.
+```text
+AuthN-AuthZ-API/
+├── .env.example
+├── .gitignore
+├── Dockerfile
+├── README.md
+├── requirements.txt
+└─ src/
+   ├── api/
+   │   └─ v1/
+   │       └─ endpoints/
+   │           └─ .gitkeep
+   ├── core/
+   │   └─ .gitkeep
+   ├── crud/
+   │   └─ .gitkeep
+   ├── models/
+   │   └─ .gitkeep
+   ├── schemas/
+   │   └─ .gitkeep
+   └─ main.py
+```
 
 ---
 
