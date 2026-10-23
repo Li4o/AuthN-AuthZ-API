@@ -34,6 +34,8 @@ A secure authentication and authorization API built with Python(FastAPI), featur
 - **Databese**: PostgreSQL
 - **Cache/Rete Limit**: Redis
 - **Container**: Docker /Docker Compose
+- **Hash**: Argon2
+- **Token**: PyJWT
 
 ---
 
@@ -68,3 +70,7 @@ AuthN-AuthZ-API/
   - ステートレスなJWTのデメリットである「即時無効化の難しさ」をカバーするため、アクセストークンの有効期限を15分程度に抑え、リフレッシュトークンと併用する設計を採用。
 - **なぜ Pydantic と ORM を併用するのか？**
   - Pydantic でアプリ入口の入力バリデーションを行い、ORM でDB操作時のクエリ構造化を行うことで、二重のセキュリティ境界を構築するため。
+- **なぜ Argon2を使用するのか？**
+  - 最新のハッシュ化技術を使用したいため　CPU・メモリを消費する設計により並列総当たり攻撃に強いセキュリティを構築するため
+- **なぜ PyJWTを使用するのか？**
+  - 適切な設計で運用すること出来ればセキュアなトークン認証を実現できるため　また、脆弱性対応が迅速なライブラリのため
