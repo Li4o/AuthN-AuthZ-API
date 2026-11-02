@@ -1,5 +1,5 @@
-from pydantic import Basemodel, EmailStr, SecretStr
+from pydantic import BaseModel, EmailStr, SecretStr
 
-class UserCreate(Basemodel):
+class UserCreate(BaseModel):
     email: EmailStr
     password: SecretStr
