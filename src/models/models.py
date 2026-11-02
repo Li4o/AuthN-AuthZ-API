@@ -1,6 +1,7 @@
 from sqlalchemy.orm import Mapped, mapped_column
 from src.database import Base
 
+# Userクラスの宣言
 class User(Base):
     __tablename__ = "users"
 
