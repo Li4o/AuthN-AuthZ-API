@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from src.core.config import Settings
+from src.models.models import User
 
 # 設定クラスのインスタンスを作成
 settings = Settings()
