@@ -4,7 +4,7 @@ from pydantic_settings import BaseSettings
 class Settings(BaseSettings):
     PROJECT_NAME: str = "AuthN-AuthZ-API"
     DATABASE_URL: SecretStr
-    SECRET_KET: SecretStr
+    SECRET_KEY: SecretStr
 
     model_config = {
         "env_file": ".env",
