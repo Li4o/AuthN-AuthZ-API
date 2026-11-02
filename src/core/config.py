@@ -1,7 +1,7 @@
 from pydantic import SecretStr
 from pydantic_settings import BaseSettings
 
-class Setting(BaseSettings):
+class Settings(BaseSettings):
     PROJECT_NAME: str = "AuthN-AuthZ-API"
     DATABASE_URL: SecretStr
     SECRET_KET: SecretStr
